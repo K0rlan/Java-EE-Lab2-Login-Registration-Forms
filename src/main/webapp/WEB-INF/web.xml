@@ -1,0 +1,21 @@
+<web-app>
+    <servlet>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>kz.iitu.javaee.ConfigDemoServlet</servlet-class>
+
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>admin</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>mypassword</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/config/demo</url-pattern>
+    </servlet-mapping>
+</web-app>
